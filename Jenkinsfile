@@ -13,6 +13,11 @@ pipeline {
                 bat 'call venv\\Scripts\\activate.bat && pytest -v --junitxml=results.xml'
             }
         }
+        stage('Echo'){
+            steps {
+                echo "Hello World"
+            }
+        }
     }
 
     post {
